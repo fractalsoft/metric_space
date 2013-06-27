@@ -19,8 +19,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+point1 = {x: 1.0, y: 2.0, z: 3.0}
+point2 = {x: 2.5, y: -1.0}
 
+MetricSpace::BritishRails.distance(point1, point2)
+MetricSpace::Euclidean.distance(point1, point2)
+MetricSpace::Maximum.distance(point1, point2)
+MetricSpace::Taxicab.distance(point1, point2)
+```
 ## Contributing
 
 1. Fork it
