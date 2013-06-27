@@ -1,5 +1,5 @@
 # MetricSpace
-[![Build Status](https://travis-ci.org/[fractalsoft]/[metric_space].png)](https://travis-ci.org/[fractalsoft]/[metric_space])
+[![Build Status](https://travis-ci.org/fractalsoft/metric_space.png)](https://travis-ci.org/fractalsoft/metric_space)
 
 Count distance between points in selected metric space
 
