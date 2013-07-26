@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe MetricSpace::BritishRail do
-  let(:klass) { MetricSpace::BritishRail }
+  subject { MetricSpace::BritishRail }
 
   describe ".distance" do
     [
@@ -33,7 +33,7 @@ describe MetricSpace::BritishRail do
     ].each do |example|
       point1, point2, distance = example.values
       it "should return #{distance} for distance between #{point1} and #{point2}" do
-        klass.distance(point1, point2).round(5).should eq(distance.round(5))
+        subject.distance(point1, point2).round(5).should eq(distance.round(5))
       end
     end
   end
@@ -44,7 +44,7 @@ describe MetricSpace::BritishRail do
       {a:-2.0, b:4.0, c:-1.0} => {a:-0.5, b:1.0, c:-0.25}
     }.each_pair do |input, output|
       it "should return #{output} for #{input}" do
-        klass.normalize({a:2.0, b:1.0, c:0.5}).should eq({a:1.0, b:0.5, c:0.25})
+        subject.normalize({a:2.0, b:1.0, c:0.5}).should eq({a:1.0, b:0.5, c:0.25})
       end
     end
   end

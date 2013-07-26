@@ -1,7 +1,8 @@
 require "spec_helper"
 
 describe MetricSpace::Taxicab do
-  let(:klass) { MetricSpace::Taxicab }
+  subject { MetricSpace::Taxicab }
+
   [
     {
       point1: {a: -0.25, b: 3.25, c: 0.8},
@@ -16,7 +17,7 @@ describe MetricSpace::Taxicab do
   ].each do |example|
     point1, point2, distance = example.values
     it "should return #{distance} for distance between #{point1} and #{point2}" do
-      klass.distance(point1, point2).round(5).should eq(distance)
+      subject.distance(point1, point2).round(5).should eq(distance)
     end
   end
 end

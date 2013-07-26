@@ -1,7 +1,8 @@
 require "spec_helper"
 
 describe MetricSpace::Maximum do
-  let(:klass) { MetricSpace::Maximum }
+  subject { MetricSpace::Maximum }
+
   [
     {
       point1: {a: 7.25, b: 8.5, c: 2.0},
@@ -16,7 +17,7 @@ describe MetricSpace::Maximum do
   ].each do |example|
     point1, point2, distance = example.values
     it "should return #{distance} for distance between #{point1} and #{point2}" do
-      klass.distance(point1, point2).round(5).should eq(distance)
+      subject.distance(point1, point2).round(5).should eq(distance)
     end
   end
 end
