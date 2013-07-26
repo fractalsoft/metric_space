@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/fractalsoft/metric_space.png)](http://waffle.io/fractalsoft/metric_space)  
 # MetricSpace [![Gem Version](https://badge.fury.io/rb/metric_space.png)](http://badge.fury.io/rb/metric_space) [![Build Status](https://travis-ci.org/fractalsoft/metric_space.png)](https://travis-ci.org/fractalsoft/metric_space) [![Dependency Status](https://gemnasium.com/fractalsoft/metric_space.png)](https://gemnasium.com/fractalsoft/metric_space) [![Coverage Status](https://coveralls.io/repos/fractalsoft/metric_space/badge.png)](https://coveralls.io/r/fractalsoft/metric_space)
 [![endorse](https://api.coderwall.com/torrocus/endorsecount.png)](https://coderwall.com/torrocus)
 
