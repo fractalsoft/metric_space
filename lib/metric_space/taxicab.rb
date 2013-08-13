@@ -1,6 +1,6 @@
 module MetricSpace
-  # The name relates to the distance a taxi has to drive in a rectangular street
-  # grid to get from the origin to the point x.
+  # The name relates to the distance a taxi has to drive in
+  # a rectangular street grid to get from the origin to the point x.
   class Taxicab
     # Distance between two points in taxicab metrics
     #

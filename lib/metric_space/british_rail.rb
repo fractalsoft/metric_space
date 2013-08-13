@@ -12,7 +12,7 @@ module MetricSpace
     #   point2 = {a:-1.5, b:3.0, c:-1.5}
     #   self.distance(point1, point2) #=> 9.353142959975042
     def self.distance(one, two)
-      first, second = self.normalize(one), self.normalize(two)
+      first, second = normalize(one), normalize(two)
       if first == second
         Euclidean.distance(one, two)
       else
@@ -27,7 +27,7 @@ module MetricSpace
     def self.normalize(point)
       hash, max = point.dup, point.values.map(&:abs).max
       hash.each_pair do |index, value|
-        hash[index] = value/max
+        hash[index] = value / max
       end
       hash
     end
