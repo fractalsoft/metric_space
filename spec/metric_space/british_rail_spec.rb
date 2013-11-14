@@ -33,7 +33,9 @@ describe MetricSpace::BritishRail do
     ].each do |example|
       point1, point2, distance = example.values
       it "is #{distance} between #{point1} and #{point2}" do
-        subject.distance(point1, point2).round(5).should eq(distance.round(5))
+        expect(
+          subject.distance(point1, point2).round(5)
+        ).to eq(distance.round(5))
       end
     end
   end
@@ -44,7 +46,7 @@ describe MetricSpace::BritishRail do
       { a: -2.0, b: 4.0, c: -1.0 } => { a: -0.5, b: 1.0, c: -0.25 }
     }.each_pair do |input, output|
       it "should return #{output} for #{input}" do
-        subject.normalize(input).should eq(output)
+        expect(subject.normalize(input)).to eq(output)
       end
     end
   end

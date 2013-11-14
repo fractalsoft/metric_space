@@ -17,7 +17,7 @@ describe MetricSpace::Taxicab do
   ].each do |example|
     point1, point2, distance = example.values
     it "is #{distance} between #{point1} and #{point2}" do
-      subject.distance(point1, point2).round(5).should eq(distance)
+      expect(subject.distance(point1, point2).round(5)).to eq(distance)
     end
   end
 end
